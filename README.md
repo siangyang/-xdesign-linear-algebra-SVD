@@ -19,7 +19,7 @@ Using high level synthesis to accelerate singular value decomposition (SVD), the
 * **code/**
   * original - original code from open source if there is 
   * final (use inline pragma) - include both host and kernel code ※Note: host code must do auto-check
-* **code-opt/** - Note it may have multiple code directories for different code structure, named by code-opt  (opt refer to optimization method, e.g. code-OoO  Out-Of-Order)
+* **code_opt/** - Note it may have multiple code directories for different code structure, named by code-opt  (opt refer to optimization method, e.g. code-OoO  Out-Of-Order)
   * including library modification
 * **testdata/** - include input test data, and output result data
 * **script/** - makefile
@@ -29,15 +29,23 @@ Using high level synthesis to accelerate singular value decomposition (SVD), the
 ## Usage
 ```
 README.md
-design/
+code/
     svd.h
     svd.cpp
-testbench/
-    svd_tb.cpp
-hls_library/
-    hls_svd.cpp
-pynq_python/
-    svd.py	
+code_opt/
+    svd.h
+    svd.cpp
+    hls_library/
+        hls_svd.cpp
+testdata/
+    svd.py
+    pynq_python/
+        svd.py
+script/
+    directives.tcl
+    run_hls.tcl
+impl/
+    svd_top_csynth.rpt
 ```
 
 1. fpga board setup
