@@ -18,8 +18,8 @@ Using high level synthesis to accelerate singular value decomposition (SVD), the
 * **README.md** - introduce the project, algorithm, reference ....
 * **code/**
   * original - original code from open source if there is 
-  * final (use inline pragma) - include both host and kernel code ※Note: host code must do auto-check
-* **code_opt/** - Note it may have multiple code directories for different code structure, named by code-opt  (opt refer to optimization method, e.g. code-OoO  Out-Of-Order)
+  * final (use inline pragma) - include both host and kernel code 
+* **code_opt/** - Note it may have multiple code directories for different code structure, named by code-opt 
   * including library modification
 * **testdata/** - include input test data, and output result data
 * **script/** - makefile
@@ -59,8 +59,8 @@ We use **Xilinx ZedBoard Evaluation and Development Kit** to evaulate this proje
 4. generate .bit from vivado
 
 3. python test
-```sh
- python svc.py
+```shell 
+ python svd.py
 ```
 ## References
 * xilinx vivado design examples
