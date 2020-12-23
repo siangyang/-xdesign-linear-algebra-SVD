@@ -15,18 +15,6 @@
 Using high level synthesis to accelerate singular value decomposition (SVD), the most common matrix  method. 
 
 **Directory structure**
-* **README.md** - introduce the project, algorithm, reference ....
-* **code/**
-  * original - original code from open source if there is 
-  * final (use inline pragma) - include both host and kernel code 
-* **code_opt/** - Note it may have multiple code directories for different code structure, named by code-opt 
-  * including library modification
-* **testdata/** - include input test data, and output result data
-* **script/** - makefile
-* **impl/** - result of the implementation, only the metafile, and report, e.g. vitis summary file, HLS csynth report
-
-<!-- USAGE EXAMPLES -->
-## Usage
 ```
 README.md
 code/
@@ -47,6 +35,9 @@ script/
 impl/
     svd_top_csynth.rpt
 ```
+
+<!-- USAGE EXAMPLES -->
+## Usage
 
 1. fpga board setup
 
