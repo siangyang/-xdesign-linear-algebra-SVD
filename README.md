@@ -26,7 +26,7 @@ code_opt/
     hls_library/
         hls_svd.cpp
 testdata/
-    svd.py
+    svd_tb.cpp
     pynq_python/
         svd.py
 script/
